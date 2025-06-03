@@ -10,21 +10,21 @@ int main() {
      
     printf("\033[32mBem vindo ao simulador de movimento das peças de xadrez!\033[0m\n");
     
-    printf("\n");
-    printf("Movimentos da torre\n"); 
+    printf("\033[34mMovimentos da Torre\033[0m\n");
     for (int i = 0; i < casasTorre; i++) {
-    printf("Direita\n");
+    printf("➡️ Direita!\n");
     }
     printf("\n"); 
-    printf("Movimentos do bispo\n");
+    printf("\033[31mMovimentos do Bispo\033[0m\n");
+
      while (contadorBispo < casasBispo) {
-        printf("Cima Direita\n"); 
+    printf("↗️ Cima Direita!\n");
         contadorBispo++;
     }
     printf("\n");
-    printf("Movimento da Rainha\n");         
+    printf("\033[33mMovimentos da Rainha\033[0m\n");  
     do {
-        printf("Esquerda\n"); 
+    printf("⬅️ Esquerda!\n");
         contadorRainha++;
     } while (contadorRainha < casasRainha);
     printf("\n");
